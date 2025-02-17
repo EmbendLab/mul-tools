@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "demo-link",
-    "project_version":    "8d8edc59-dirty",
+    "project_version":    "3f4f306f-dirty",
     "project_path":       "/home/alt/alt-link/demo-link",
     "idf_path":           "/home/alt/esp/v5.3.2/esp-idf",
     "build_dir":          "/home/alt/alt-link/demo-link/build",
@@ -55,7 +55,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/alt/alt-link/demo-link/build/esp-idf/USBIP/libUSBIP.a",
-            "sources": [ "/home/alt/alt-link/demo-link/components/USBIP/USBIP.c" ],
+            "sources": [ "/home/alt/alt-link/demo-link/components/USBIP/USBIP.c", "/home/alt/alt-link/demo-link/components/USBIP/MSOS20_descriptor.c", "/home/alt/alt-link/demo-link/components/USBIP/usb_handle.c", "/home/alt/alt-link/demo-link/components/USBIP/usb_descriptor.c" ],
             "include_dirs": [ "include" ]
         },
         "app_trace": {
