@@ -25,7 +25,7 @@
  *
  *---------------------------------------------------------------------------*/
 
-#include "components/DAP/config/DAP_config.h"
+#include "components/DAP/include/DAP_config.h"
 #include "components/DAP/include/DAP.h"
 
 //**************************************************************************************************

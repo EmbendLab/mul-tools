@@ -85,3 +85,4 @@
 /home/alt/alt-link/demo-link/build/esp-idf/DAP/libDAP.a
 /home/alt/alt-link/demo-link/build/esp-idf/USBIP/libUSBIP.a
 /home/alt/alt-link/demo-link/build/esp-idf/elphureLink/libelphureLink.a
+/home/alt/alt-link/demo-link/build/esp-idf/esp_if/libesp_if.a

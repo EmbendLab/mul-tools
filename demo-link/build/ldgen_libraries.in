@@ -85,3 +85,4 @@ $<TARGET_FILE:__idf_main>
 $<TARGET_FILE:__idf_DAP>
 $<TARGET_FILE:__idf_USBIP>
 $<TARGET_FILE:__idf_elphureLink>
+$<TARGET_FILE:__idf_esp_if>

@@ -27,7 +27,7 @@
 
 #include <string.h>
 
-#include "components/DAP/config/DAP_config.h"
+#include "components/DAP/include/DAP_config.h"
 #include "components/DAP/include/DAP.h"
 #include "components/DAP/include/spi_switch.h"
 

@@ -840,3 +840,10 @@
 /home/alt/alt-link/demo-link/build/esp-idf/elphureLink/CMakeFiles/install.dir
 /home/alt/alt-link/demo-link/build/esp-idf/elphureLink/CMakeFiles/install/local.dir
 /home/alt/alt-link/demo-link/build/esp-idf/elphureLink/CMakeFiles/install/strip.dir
+/home/alt/alt-link/demo-link/build/esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir
+/home/alt/alt-link/demo-link/build/esp-idf/esp_if/CMakeFiles/edit_cache.dir
+/home/alt/alt-link/demo-link/build/esp-idf/esp_if/CMakeFiles/rebuild_cache.dir
+/home/alt/alt-link/demo-link/build/esp-idf/esp_if/CMakeFiles/list_install_components.dir
+/home/alt/alt-link/demo-link/build/esp-idf/esp_if/CMakeFiles/install.dir
+/home/alt/alt-link/demo-link/build/esp-idf/esp_if/CMakeFiles/install/local.dir
+/home/alt/alt-link/demo-link/build/esp-idf/esp_if/CMakeFiles/install/strip.dir
