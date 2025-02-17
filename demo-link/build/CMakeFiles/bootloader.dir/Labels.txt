@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/alt/alt-link/demo-link/build/CMakeFiles/bootloader
+/home/alt/alt-link/demo-link/build/CMakeFiles/bootloader.rule
+/home/alt/alt-link/demo-link/build/CMakeFiles/bootloader-complete.rule
+/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
