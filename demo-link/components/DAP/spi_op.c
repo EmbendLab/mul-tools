@@ -18,12 +18,12 @@
 #include <stdbool.h>
 
 
-#include "components/esp_if/include/dap_configuration.h"
+#include "dap_configuration.h" 
 
-#include "components/DAP/include/cmsis_compiler.h"
-#include "components/DAP/include/spi_op.h"
-#include "components/DAP/include/spi_switch.h"
-#include "components/DAP/include/gpio_common.h"
+#include "cmsis_compiler.h"
+#include "spi_op.h"
+#include "spi_switch.h"
+#include "gpio_common.h"
 
 #ifdef CONFIG_IDF_TARGET_ESP8266
     #define DAP_SPI SPI1

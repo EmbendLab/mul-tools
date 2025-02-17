@@ -45,13 +45,13 @@
 #include <stdint.h>
 #include <string.h>
 
-#include "main/dap_configuration.h"
-#include "main/wifi_configuration.h"
-#include "main/timer.h"
+#include "dap_configuration.h"
+#include "wifi_configuration.h"
+#include "timer.h"
 
-#include "components/DAP/include/cmsis_compiler.h"
-#include "components/DAP/include/gpio_op.h"
-#include "components/DAP/include/spi_switch.h"
+#include "cmsis_compiler.h"
+#include "gpio_op.h"    
+#include "spi_switch.h"
 
 
 #ifdef CONFIG_IDF_TARGET_ESP8266

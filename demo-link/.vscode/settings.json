@@ -11,6 +11,8 @@
         "esp_system.h": "c",
         "task.h": "c",
         "param.h": "c",
-        "esp_event.h": "c"
+        "esp_event.h": "c",
+        "elphurelink.h": "c",
+        "err.h": "c"
     }
 }

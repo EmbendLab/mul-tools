@@ -6,4 +6,8 @@ idf_component_register(SRCS "DAP.c"
 "spi_op.c"
 "spi_switch.c"
 "dap_utility.c"
-                    INCLUDE_DIRS "include")
+"SW_DP.c"
+"uart_modify.c"
+                    INCLUDE_DIRS "include"
+                                 "../esp_if/include"
+                    )
