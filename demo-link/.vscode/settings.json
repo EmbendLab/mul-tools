@@ -5,5 +5,8 @@
         "board/esp32c6-lpcore-builtin.cfg"
     ],
     "idf.port": "/dev/ttyS0",
-    "idf.toolsPath": "/home/alt/.espressif"
+    "idf.toolsPath": "/home/alt/.espressif",
+    "files.associations": {
+        "freertos.h": "c"
+    }
 }
