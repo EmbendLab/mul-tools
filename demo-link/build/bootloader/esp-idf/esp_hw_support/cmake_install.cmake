@@ -39,11 +39,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader/esp-idf/esp_hw_support/port/esp32c6/cmake_install.cmake")
+  include("/home/alt/alt-link/demo-link/build/bootloader/esp-idf/esp_hw_support/port/esp32c6/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
+  include("/home/alt/alt-link/demo-link/build/bootloader/esp-idf/esp_hw_support/lowpower/cmake_install.cmake")
 endif()
 

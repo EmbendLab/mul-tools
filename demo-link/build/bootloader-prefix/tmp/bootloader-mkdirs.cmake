@@ -10,18 +10,18 @@ if(NOT EXISTS "/home/alt/esp/v5.3.2/esp-idf/components/bootloader/subproject")
   file(MAKE_DIRECTORY "/home/alt/esp/v5.3.2/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader"
-  "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader-prefix"
-  "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader-prefix/tmp"
-  "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader-prefix/src"
-  "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/alt/alt-link/demo-link/build/bootloader"
+  "/home/alt/alt-link/demo-link/build/bootloader-prefix"
+  "/home/alt/alt-link/demo-link/build/bootloader-prefix/tmp"
+  "/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/alt/alt-link/demo-link/build/bootloader-prefix/src"
+  "/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/alt/alt-link/demo-link/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

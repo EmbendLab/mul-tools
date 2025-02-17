@@ -7,6 +7,10 @@
     "idf.port": "/dev/ttyS0",
     "idf.toolsPath": "/home/alt/.espressif",
     "files.associations": {
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "esp_system.h": "c",
+        "task.h": "c",
+        "param.h": "c",
+        "esp_event.h": "c"
     }
 }

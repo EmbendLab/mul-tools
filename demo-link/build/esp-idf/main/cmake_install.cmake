@@ -1,4 +1,4 @@
-# Install script for directory: /home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/main
+# Install script for directory: /home/alt/alt-link/demo-link/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

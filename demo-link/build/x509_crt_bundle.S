@@ -1,4 +1,4 @@
-/* * Data converted from /home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/alt/alt-link/demo-link/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

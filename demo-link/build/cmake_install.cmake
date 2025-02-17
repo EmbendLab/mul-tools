@@ -1,4 +1,4 @@
-# Install script for directory: /home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server
+# Install script for directory: /home/alt/alt-link/demo-link
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/esp-idf/cmake_install.cmake")
+  include("/home/alt/alt-link/demo-link/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/alt/esp/v5.3.2/esp-idf/examples/protocols/sockets/tcp_server/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/alt/alt-link/demo-link/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
