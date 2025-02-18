@@ -38,10 +38,10 @@
  *
  *---------------------------------------------------------------------------*/
 
-#include "components/DAP/config/DAP_config.h"
-#include "components/DAP/include/DAP.h"
-#include "components/DAP/include/uart_modify.h"
-#include "components/DAP/include/swo.h"
+#include "DAP_config.h"
+#include "DAP.h"
+#include "uart_modify.h"
+#include "swo.h"
 
 #include "esp_err.h"
 #include "freertos/FreeRTOS.h"

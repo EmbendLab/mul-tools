@@ -13,6 +13,7 @@
         "param.h": "c",
         "esp_event.h": "c",
         "elphurelink.h": "c",
-        "err.h": "c"
+        "err.h": "c",
+        "uart_modify.h": "c"
     }
 }
