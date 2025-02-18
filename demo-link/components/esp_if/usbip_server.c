@@ -1,14 +1,14 @@
 #include <stdint.h>
 #include <string.h>
 
-#include "main/usbip_server.h"
-#include "main/kcp_server.h"
-#include "main/tcp_netconn.h"
-#include "main/DAP_handle.h"
-#include "main/wifi_configuration.h"
+#include "usbip_server.h"
 
-#include "components/USBIP/usb_handle.h"
-#include "components/USBIP/usb_descriptor.h"
+#include "tcp_netconn.h"
+#include "DAP_handle.h"
+#include "wifi_configuration.h" 
+
+#include "usb_handle.h"
+#include "usb_descriptor.h"
 
 #include "lwip/err.h"
 #include "lwip/sockets.h"

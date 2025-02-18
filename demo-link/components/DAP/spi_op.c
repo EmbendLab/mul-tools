@@ -32,7 +32,7 @@
 #elif defined CONFIG_IDF_TARGET_ESP32C3
     #define DAP_SPI GPSPI2
 #else
-    #error unknown hardware
+  #define DAP_SPI GPSPI2
 #endif
 
 
@@ -64,6 +64,16 @@
             DAP_SPI.cmd.usr = 1;                   \
             while (DAP_SPI.cmd.usr) continue;      \
         } while(0)
+ #else
+        #define SET_MOSI_BIT_LEN(x) DAP_SPI.ms_dlen.ms_data_bitlen = x
+        #define SET_MISO_BIT_LEN(x) DAP_SPI.ms_dlen.ms_data_bitlen = x
+        #define START_AND_WAIT_SPI_TRANSMISSION_DONE() \
+            do {                                       \
+                DAP_SPI.cmd.update = 1;                \
+                while (DAP_SPI.cmd.update) continue;   \
+                DAP_SPI.cmd.usr = 1;                   \
+                while (DAP_SPI.cmd.usr) continue;      \
+            } while(0)        
 #endif
 
 /**

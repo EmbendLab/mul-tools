@@ -14,6 +14,12 @@
         "esp_event.h": "c",
         "elphurelink.h": "c",
         "err.h": "c",
-        "uart_modify.h": "c"
+        "uart_modify.h": "c",
+        "tcp_netconn.h": "c",
+        "dap_handle.h": "c",
+        "semphr.h": "c",
+        "event_groups.h": "c",
+        "usb_handle.h": "c",
+        "usb_descriptor.h": "c"
     }
 }

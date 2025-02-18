@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "demo-link",
-    "project_version":    "9533fb1a-dirty",
+    "project_version":    "d8d96602-dirty",
     "project_path":       "/home/alt/alt-link/demo-link",
     "idf_path":           "/home/alt/esp/v5.3.2/esp-idf",
     "build_dir":          "/home/alt/alt-link/demo-link/build",
@@ -820,7 +820,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/alt/alt-link/demo-link/build/esp-idf/esp_if/libesp_if.a",
-            "sources": [ "/home/alt/alt-link/demo-link/components/esp_if/esp_if.c" ],
+            "sources": [ "/home/alt/alt-link/demo-link/components/esp_if/esp_if.c", "/home/alt/alt-link/demo-link/components/esp_if/DAP_handle.c", "/home/alt/alt-link/demo-link/components/esp_if/timer.c", "/home/alt/alt-link/demo-link/components/esp_if/uart_bridge.c", "/home/alt/alt-link/demo-link/components/esp_if/usbip_server.c", "/home/alt/alt-link/demo-link/components/esp_if/wifi_handle.c" ],
             "include_dirs": [ "include" ]
         },
         "esp_lcd": {

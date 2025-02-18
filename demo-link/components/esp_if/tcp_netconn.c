@@ -17,9 +17,9 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #include <stdint.h>
 #include <sys/param.h>
 
-#include "main/wifi_configuration.h"
-#include "main/usbip_server.h"
-#include "main/tcp_netconn.h"
+#include "wifi_configuration.h"
+#include "usbip_server.h"
+#include "tcp_netconn.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"

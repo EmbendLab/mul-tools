@@ -1,21 +1,12 @@
-/**
- * @file USB_handle.c
- * @brief Handle all Standard Device Requests on endpoint 0
- * @version 0.1
- * @date 2020-01-23
- *
- * @copyright Copyright (c) 2020
- *
- */
 #include <stdint.h>
 #include <string.h>
 
-#include "main/usbip_server.h"
-#include "main/wifi_configuration.h"
+#include "usbip_server.h"
+#include "wifi_configuration.h"
 
-#include "components/USBIP/usb_handle.h"
-#include "components/USBIP/usb_descriptor.h"
-#include "components/USBIP/MSOS20_descriptor.h"
+#include "usb_handle.h"
+#include "usb_descriptor.h"
+#include "MSOS20_descriptor.h"
 
 #include "lwip/err.h"
 #include "lwip/sockets.h"

@@ -11,11 +11,11 @@
 #include <stdint.h>
 #include <sys/param.h>
 
-#include "main/wifi_configuration.h"
-#include "main/usbip_server.h"
-#include "main/DAP_handle.h"
+#include "wifi_configuration.h"
+#include "usbip_server.h"
+#include "DAP_handle.h"
 
-#include "components/elaphureLink/elaphureLink_protocol.h"
+#include "elaphureLink.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"

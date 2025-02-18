@@ -60,6 +60,7 @@
   #include "esp8266/pin_mux_register.h"
 #elif defined CONFIG_IDF_TARGET_ESP32
 #elif defined CONFIG_IDF_TARGET_ESP32C3
+#elif defined CONFIG_IDF_TARGET_ESP32C6
 #else
   #error unknown hardware
 #endif
@@ -97,6 +98,8 @@ This information includes:
   #define CPU_CLOCK 240000000
   // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<240MHz
 #elif defined CONFIG_IDF_TARGET_ESP32C3
+  #define CPU_CLOCK 16000000
+#else
   #define CPU_CLOCK 16000000
   // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<160MHz
 #endif
@@ -249,6 +252,17 @@ __STATIC_INLINE uint8_t DAP_GetSerNumString(char *str)
   #define PIN_LED_CONNECTED _ // won't be used
   #define PIN_LED_RUNNING _ // won't be used
 #elif defined CONFIG_IDF_TARGET_ESP32C3
+  #define PIN_SWDIO _      // SPI MISO
+  #define PIN_SWDIO_MOSI 7 // SPI MOSI
+  #define PIN_SWCLK 6
+  #define PIN_TDO 8        // device TDO -> Host Data Input
+  #define PIN_TDI 9
+  #define PIN_nTRST 4       // optional
+  #define PIN_nRESET 5
+
+  #define PIN_LED_CONNECTED _ // won't be used
+  #define PIN_LED_RUNNING _ // won't be use
+#else 
   #define PIN_SWDIO _      // SPI MISO
   #define PIN_SWDIO_MOSI 7 // SPI MOSI
   #define PIN_SWCLK 6
@@ -419,6 +433,38 @@ __STATIC_INLINE void PORT_JTAG_SETUP(void)
   GPIO_PULL_UP_ONLY_SET(PIN_nTRST);
   GPIO_PULL_UP_ONLY_SET(PIN_nRESET);
 }
+
+#else
+__STATIC_INLINE void PORT_JTAG_SETUP(void)
+{
+  // set TCK, TMS pin
+
+
+  // PIN_TDO output disable
+  GPIO.enable_w1tc.enable_w1tc = (0x1 << PIN_TDO);
+  // PIN_TDO input enable
+  PIN_INPUT_ENABLE(GPIO_PIN_MUX_REG[PIN_TDO]);
+
+
+
+  // gpio_set_direction(PIN_TDI, GPIO_MODE_OUTPUT);
+  GPIO.enable_w1ts.enable_w1ts = (0x1 << PIN_TDI);
+  GPIO.pin[PIN_TDI].pad_driver = 0;
+  REG_CLR_BIT(GPIO_PIN_MUX_REG[PIN_TDI], FUN_PD); // disable pull down
+
+  // gpio_set_direction(PIN_nTRST, GPIO_MODE_OUTPUT_OD);
+  // gpio_set_direction(PIN_nRESET, GPIO_MODE_OUTPUT_OD);
+  GPIO.enable_w1tc.enable_w1tc = (0x1 << PIN_nTRST);
+  GPIO.pin[PIN_nTRST].pad_driver = 1;
+  GPIO.enable_w1tc.enable_w1tc = (0x1 << PIN_nRESET);
+  GPIO.pin[PIN_nRESET].pad_driver = 1;
+
+  // gpio_set_pull_mode(PIN_nTRST, GPIO_PULLUP_ONLY);
+  // gpio_set_pull_mode(PIN_nRESET, GPIO_PULLUP_ONLY);
+  GPIO_PULL_UP_ONLY_SET(PIN_nTRST);
+  GPIO_PULL_UP_ONLY_SET(PIN_nRESET);
+}
+
 #endif
 
 /**
@@ -492,7 +538,7 @@ __STATIC_FORCEINLINE uint32_t PIN_SWCLK_TCK_IN(void)
  */
 __STATIC_FORCEINLINE void PIN_SWCLK_TCK_SET(void)
 {
-  GPIO_SET_LEVEL_HIGH(PIN_SWCLK);
+   GPIO_SET_LEVEL_HIGH(PIN_SWCLK); 
 }
 
 /**
@@ -661,6 +707,8 @@ __STATIC_FORCEINLINE uint32_t PIN_TDO_IN(void)
 #elif defined CONFIG_IDF_TARGET_ESP32
   return ((GPIO.in >> PIN_TDO) & 0x1) ? 1 : 0;
 #elif defined CONFIG_IDF_TARGET_ESP32C3
+  return GPIO_GET_LEVEL(PIN_TDO);
+#else 
   return GPIO_GET_LEVEL(PIN_TDO);
 #endif
 }

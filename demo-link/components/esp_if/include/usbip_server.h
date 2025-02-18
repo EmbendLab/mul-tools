@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <stddef.h>
 
-#include "components/USBIP/usbip_defs.h"
+#include "usbip_defs.h"
 
 enum state_t
 {

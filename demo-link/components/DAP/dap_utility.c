@@ -1,4 +1,4 @@
-#include "components/DAP/include/dap_utility.h"
+#include "include/dap_utility.h"
 
 const uint8_t kParityByteTable[256] =
 {
