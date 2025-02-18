@@ -20,6 +20,8 @@
         "semphr.h": "c",
         "event_groups.h": "c",
         "usb_handle.h": "c",
-        "usb_descriptor.h": "c"
+        "usb_descriptor.h": "c",
+        "wifi_configuration.h": "c",
+        "usbip_server.h": "c"
     }
 }

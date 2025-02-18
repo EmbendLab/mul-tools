@@ -12,8 +12,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "components/USBIP/usb_descriptor.h"
-#include "components/USBIP/usb_defs.h"
+#include "usb_descriptor.h"
+#include "usb_defs.h"
 
 #define USBShort(ui16Value)     ((ui16Value) & 0xff), ((ui16Value) >> 8)
 

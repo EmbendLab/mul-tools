@@ -14,7 +14,7 @@
 
 #include <stdint.h>
 
-#include "components/USBIP/MSOS20_descriptor.h"
+#include "MSOS20_descriptor.h"
 
 #define USBShort(ui16Value)     ((ui16Value) & 0xff), ((ui16Value) >> 8) //((ui16Value) & 0xFF),(((ui16Value) >> 8) & 0xFF)
 

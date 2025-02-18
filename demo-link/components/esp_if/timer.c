@@ -12,7 +12,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "main/timer.h"
+#include "timer.h"
 
 #ifdef CONFIG_IDF_TARGET_ESP8266
     #include "hw_timer.h"
@@ -58,6 +58,6 @@ uint32_t get_timer_count()
 #elif defined CONFIG_IDF_TARGET_ESP32 || defined CONFIG_IDF_TARGET_ESP32C3
     return 0;
 #else
-    #error unknown hardware
+    return 0;
 #endif
 }
