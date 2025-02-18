@@ -1,14 +1,3 @@
-/**
- * @file gpio_op.h
- * @author windowsair
- * @brief esp GPIO operation
- * @version 0.1
- * @date 2021-03-03
- *
- * @copyright Copyright (c) 2021
- *
- */
-
 #ifndef __GPIO_OP_H__
 #define __GPIO_OP_H__
 

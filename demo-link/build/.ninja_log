@@ -1047,3 +1047,5 @@
 36457	36780	1739779877931996710	esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6/pmu_param.c.obj	44c483297df6092e
 5957	6581	1739779848023762495	esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.obj	66ffa08418a90c67
 32	4621	1739782517221063326	build.ninja	2a23f5045718a163
+21	3113200	1739779828173686994	CMakeFiles/confserver	cc0975c38e3faa16
+21	3113200	1739779828173686994	/home/alt/alt-link/demo-link/build/CMakeFiles/confserver	cc0975c38e3faa16
