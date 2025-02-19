@@ -1,7 +1,7 @@
 #ifndef __DAP_HANDLE_H__
 #define __DAP_HANDLE_H__
 
-#include "components/USBIP/usbip_defs.h"
+#include "usbip_defs.h"
 
 enum reset_handle_t
 {

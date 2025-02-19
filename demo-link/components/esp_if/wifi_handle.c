@@ -4,10 +4,10 @@
 #include <stdint.h>
 #include <sys/param.h>
 
-#include "main/wifi_configuration.h"
-#include "main/uart_bridge.h"
+#include "wifi_configuration.h"
+#include "uart_bridge.h"
 
-#include "components/DAP/include/gpio_op.h"
+#include "../DAP/include/gpio_op.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"

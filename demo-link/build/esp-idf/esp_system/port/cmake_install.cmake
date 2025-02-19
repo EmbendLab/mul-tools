@@ -32,13 +32,13 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-# Set path to fallback-tool for dependency-resolution.
+# Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/home/alt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alt/alt-link/demo-link/build/esp-idf/esp_system/port/soc/esp32c6/cmake_install.cmake")
+  include("/home/alt/git_bench/mul-tools/demo-link/build/esp-idf/esp_system/port/soc/esp32c6/cmake_install.cmake")
 endif()
 

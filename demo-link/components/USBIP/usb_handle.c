@@ -1,8 +1,8 @@
 #include <stdint.h>
 #include <string.h>
 
-#include "usbip_server.h"
-#include "wifi_configuration.h"
+#include "../esp_if/include/usbip_server.h"
+#include "../esp_if/include/wifi_configuration.h"
 
 #include "usb_handle.h"
 #include "usb_descriptor.h"

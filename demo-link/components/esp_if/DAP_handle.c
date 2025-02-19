@@ -20,8 +20,8 @@
 #include "wifi_configuration.h"
 
 #include "usb_descriptor.h"
-#include "DAP.h"
-#include "swo.h"
+#include "../DAP/include/DAP.h"
+#include "../DAP/include/swo.h"
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
