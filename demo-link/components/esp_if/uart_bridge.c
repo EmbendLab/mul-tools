@@ -37,7 +37,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 #include "freertos/event_groups.h"
 #include "freertos/queue.h"
 #include "esp_system.h"
-//#include "../../components/components/esp_wifi/include/esp_wifi.h"
+#include "../../components/components/esp_wifi/include/esp_wifi.h"
 #include "esp_event_loop.h"
 #include "esp_log.h"
 #include "nvs_flash.h"

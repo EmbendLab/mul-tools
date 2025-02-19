@@ -1,7 +1,7 @@
 idf_build_get_property(target IDF_TARGET)
 set(priv_include_dirs "private_include")
 set(priv_requires "")
-set(requires "log" "esp_common" "freertos")
+set(requires "log" "esp_common" "freertos" "esp_event")
 set(srcs "default_event_loop.c"
          "esp_event.c"
          "esp_event_private.c")
