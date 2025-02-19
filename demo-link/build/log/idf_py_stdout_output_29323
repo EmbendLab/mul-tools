@@ -1,0 +1,1109 @@
+[1/16] Building C object esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/uart_bridge.c.obj
+FAILED: esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/uart_bridge.c.obj 
+/home/alt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/alt/git_bench/mul-tools/demo-link/build/config -I/home/alt/git_bench/mul-tools/demo-link/components/esp_if/include -I/home/alt/git_bench/mul-tools/demo-link/components/USBIP/include -I/home/alt/esp/v5.3.2/esp-idf/components/newlib/platform_include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/esp_additions/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/dma/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/ldo/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/alt/esp/v5.3.2/esp-idf/components/heap/include -I/home/alt/esp/v5.3.2/esp-idf/components/log/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/platform_port/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_common/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/riscv -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/private -I/home/alt/esp/v5.3.2/esp-idf/components/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps/sntp -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/lwip/src/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/freertos/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/sys -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/alt/git_bench/mul-tools/demo-link=. -fmacro-prefix-map=/home/alt/esp/v5.3.2/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/uart_bridge.c.obj -MF esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/uart_bridge.c.obj.d -o esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/uart_bridge.c.obj -c /home/alt/git_bench/mul-tools/demo-link/components/esp_if/uart_bridge.c
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/uart_bridge.c:40:10: fatal error: esp_wifi.h: No such file or directory
+   40 | #include "esp_wifi.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+[2/16] Building C object esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/DAP_handle.c.obj
+FAILED: esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/DAP_handle.c.obj 
+/home/alt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/alt/git_bench/mul-tools/demo-link/build/config -I/home/alt/git_bench/mul-tools/demo-link/components/esp_if/include -I/home/alt/git_bench/mul-tools/demo-link/components/USBIP/include -I/home/alt/esp/v5.3.2/esp-idf/components/newlib/platform_include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/esp_additions/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/dma/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/ldo/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/alt/esp/v5.3.2/esp-idf/components/heap/include -I/home/alt/esp/v5.3.2/esp-idf/components/log/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/platform_port/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_common/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/riscv -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/private -I/home/alt/esp/v5.3.2/esp-idf/components/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps/sntp -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/lwip/src/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/freertos/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/sys -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/alt/git_bench/mul-tools/demo-link=. -fmacro-prefix-map=/home/alt/esp/v5.3.2/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/DAP_handle.c.obj -MF esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/DAP_handle.c.obj.d -o esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/DAP_handle.c.obj -c /home/alt/git_bench/mul-tools/demo-link/components/esp_if/DAP_handle.c
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/DAP_handle.c:28:10: fatal error: components/esp_ringbuf/include/freertos/ringbuf.h: No such file or directory
+   28 | #include "components/esp_ringbuf/include/freertos/ringbuf.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+[3/16] Building C object esp-idf/DAP/CMakeFiles/__idf_DAP.dir/spi_op.c.obj
+FAILED: esp-idf/DAP/CMakeFiles/__idf_DAP.dir/spi_op.c.obj 
+/home/alt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/alt/git_bench/mul-tools/demo-link/build/config -I/home/alt/git_bench/mul-tools/demo-link/components/DAP/include -I/home/alt/git_bench/mul-tools/demo-link/components/esp_if/include -I/home/alt/esp/v5.3.2/esp-idf/components/newlib/platform_include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/esp_additions/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/dma/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/ldo/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/alt/esp/v5.3.2/esp-idf/components/heap/include -I/home/alt/esp/v5.3.2/esp-idf/components/log/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/platform_port/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_common/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/riscv -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/private -I/home/alt/esp/v5.3.2/esp-idf/components/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps/sntp -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/lwip/src/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/freertos/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/sys -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/alt/git_bench/mul-tools/demo-link=. -fmacro-prefix-map=/home/alt/esp/v5.3.2/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/DAP/CMakeFiles/__idf_DAP.dir/spi_op.c.obj -MF esp-idf/DAP/CMakeFiles/__idf_DAP.dir/spi_op.c.obj.d -o esp-idf/DAP/CMakeFiles/__idf_DAP.dir/spi_op.c.obj -c /home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c: In function 'DAP_SPI_WriteBits':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:111:31: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'unsigned int'
+  111 |         DAP_SPI.data_buf[0] = (buf[0] << 0) | (0U << 8) | (0U << 16) | (0U << 24);
+      |                               ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:114:31: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'unsigned int'
+  114 |         DAP_SPI.data_buf[0] = (buf[0] << 0) | (buf[1] << 8) | (0x000U << 16) | (0x000U << 24);
+      |                               ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:117:31: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'int'
+  117 |         DAP_SPI.data_buf[0] = (buf[0] << 0) | (buf[1] << 8) | (buf[2] << 16) | (buf[3] << 24);
+      |                               ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:118:31: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'unsigned int'
+  118 |         DAP_SPI.data_buf[1] = (buf[4] << 0) | (0x000U << 8) | (0x000U << 16) | (0x000U << 24);
+      |                               ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:121:31: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'int'
+  121 |         DAP_SPI.data_buf[0] = (buf[0] << 0) | (buf[1] << 8) | (buf[2] << 16) | (buf[3] << 24);
+      |                               ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:122:31: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'unsigned int'
+  122 |         DAP_SPI.data_buf[1] = (buf[4] << 0) | (buf[5] << 8) | (buf[2] << 16) | (0x000U << 24);
+      |                               ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:137:31: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'uint32_t' {aka 'long unsigned int'}
+  137 |         DAP_SPI.data_buf[0] = data_buf[0];
+      |                               ^~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:138:31: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'uint32_t' {aka 'long unsigned int'}
+  138 |         DAP_SPI.data_buf[1] = data_buf[1];
+      |                               ^~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c: In function 'DAP_SPI_ReadBits':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:35:19: error: incompatible types when assigning to type 'uint32_t' {aka 'long unsigned int'} from type 'spi_wn_reg_t'
+   35 |   #define DAP_SPI GPSPI2
+      |                   ^~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:174:19: note: in expansion of macro 'DAP_SPI'
+  174 |     data_buf[0] = DAP_SPI.data_buf[0];
+      |                   ^~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:35:19: error: incompatible types when assigning to type 'uint32_t' {aka 'long unsigned int'} from type 'spi_wn_reg_t'
+   35 |   #define DAP_SPI GPSPI2
+      |                   ^~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:175:19: note: in expansion of macro 'DAP_SPI'
+  175 |     data_buf[1] = DAP_SPI.data_buf[1];
+      |                   ^~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c: In function 'DAP_SPI_Read_Data':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:35:19: error: incompatible types when assigning to type 'uint32_t' {aka 'long unsigned int'} from type 'spi_wn_reg_t'
+   35 |   #define DAP_SPI GPSPI2
+      |                   ^~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:285:19: note: in expansion of macro 'DAP_SPI'
+  285 |     pU32Data[0] = DAP_SPI.data_buf[0];
+      |                   ^~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:35:19: error: incompatible types when assigning to type 'uint32_t' {aka 'long unsigned int'} from type 'spi_wn_reg_t'
+   35 |   #define DAP_SPI GPSPI2
+      |                   ^~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:286:19: note: in expansion of macro 'DAP_SPI'
+  286 |     pU32Data[1] = DAP_SPI.data_buf[1];
+      |                   ^~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c: In function 'DAP_SPI_Protocol_Error_Read':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:382:27: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'unsigned int'
+  382 |     DAP_SPI.data_buf[0] = 0xFFFFFFFFU;
+      |                           ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:383:27: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'unsigned int'
+  383 |     DAP_SPI.data_buf[1] = 0xFFFFFFFFU;
+      |                           ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c: In function 'DAP_SPI_Protocol_Error_Write':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:399:27: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'unsigned int'
+  399 |     DAP_SPI.data_buf[0] = 0xFFFFFFFFU;
+      |                           ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/spi_op.c:400:27: error: incompatible types when assigning to type 'spi_wn_reg_t' from type 'unsigned int'
+  400 |     DAP_SPI.data_buf[1] = 0xFFFFFFFFU;
+      |                           ^~~~~~~~~~~
+[4/16] Performing build step for 'bootloader'
+[1/1] cd /home/alt/git_bench/mul-tools/demo-link/build/bootloader/esp-idf/esptool_py && /home/alt/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/alt/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/alt/git_bench/mul-tools/demo-link/build/bootloader/bootloader.bin
+Bootloader binary size 0x56f0 bytes. 0x2910 bytes (32%) free.
+[5/16] Building C object esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj
+FAILED: esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj 
+/home/alt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/alt/git_bench/mul-tools/demo-link/build/config -I/home/alt/git_bench/mul-tools/demo-link/components/esp_if/include -I/home/alt/git_bench/mul-tools/demo-link/components/USBIP/include -I/home/alt/esp/v5.3.2/esp-idf/components/newlib/platform_include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/esp_additions/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/dma/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/ldo/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/alt/esp/v5.3.2/esp-idf/components/heap/include -I/home/alt/esp/v5.3.2/esp-idf/components/log/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/platform_port/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_common/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/riscv -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/private -I/home/alt/esp/v5.3.2/esp-idf/components/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps/sntp -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/lwip/src/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/freertos/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/sys -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/alt/git_bench/mul-tools/demo-link=. -fmacro-prefix-map=/home/alt/esp/v5.3.2/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj -MF esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj.d -o esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj -c /home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:16:10: fatal error: esp_wifi.h: No such file or directory
+   16 | #include "esp_wifi.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+[6/16] Building C object esp-idf/DAP/CMakeFiles/__idf_DAP.dir/uart_modify.c.obj
+FAILED: esp-idf/DAP/CMakeFiles/__idf_DAP.dir/uart_modify.c.obj 
+/home/alt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/alt/git_bench/mul-tools/demo-link/build/config -I/home/alt/git_bench/mul-tools/demo-link/components/DAP/include -I/home/alt/git_bench/mul-tools/demo-link/components/esp_if/include -I/home/alt/esp/v5.3.2/esp-idf/components/newlib/platform_include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/esp_additions/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/dma/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/ldo/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/alt/esp/v5.3.2/esp-idf/components/heap/include -I/home/alt/esp/v5.3.2/esp-idf/components/log/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/platform_port/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_common/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/riscv -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/private -I/home/alt/esp/v5.3.2/esp-idf/components/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps/sntp -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/lwip/src/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/freertos/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/sys -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/alt/git_bench/mul-tools/demo-link=. -fmacro-prefix-map=/home/alt/esp/v5.3.2/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/DAP/CMakeFiles/__idf_DAP.dir/uart_modify.c.obj -MF esp-idf/DAP/CMakeFiles/__idf_DAP.dir/uart_modify.c.obj.d -o esp-idf/DAP/CMakeFiles/__idf_DAP.dir/uart_modify.c.obj -c /home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:43: warning: "portYIELD_FROM_ISR" redefined
+   43 | #define portYIELD_FROM_ISR() taskYIELD()
+      | 
+In file included from /home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/alt/git_bench/mul-tools/demo-link/components/DAP/include/uart_modify.h:30,
+                 from /home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:24:
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:585: note: this is the location of the previous definition
+  585 | #define portYIELD_FROM_ISR(...) CHOOSE_MACRO_VA_ARG(portYIELD_FROM_ISR_ARG, portYIELD_FROM_ISR_NO_ARG, ##__VA_ARGS__)(__VA_ARGS__)
+      | 
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:106:5: error: unknown type name 'uart_select_notif_callback_t'
+  106 |     uart_select_notif_callback_t uart_select_notif_callback; /*!< Notification about select() events */
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:111:18: error: unknown type name 'uart_dev_t'
+  111 | static DRAM_ATTR uart_dev_t *const UART[UART_NUM_MAX] = {&uart0, &uart1};
+      |                  ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:111:59: error: 'uart0' undeclared here (not in a function)
+  111 | static DRAM_ATTR uart_dev_t *const UART[UART_NUM_MAX] = {&uart0, &uart1};
+      |                                                           ^~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:111:67: error: 'uart1' undeclared here (not in a function)
+  111 | static DRAM_ATTR uart_dev_t *const UART[UART_NUM_MAX] = {&uart0, &uart1};
+      |                                                                   ^~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_set_word_length':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:140:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  140 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:141:19: error: request for member 'conf0' in something not a structure or union
+  141 |     UART[uart_num]->conf0.bit_num = data_bit;
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:142:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  142 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_get_word_length':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:150:33: error: request for member 'conf0' in something not a structure or union
+  150 |     *(data_bit) = UART[uart_num]->conf0.bit_num;
+      |                                 ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_set_stop_bits':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:158:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  158 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:159:19: error: request for member 'conf0' in something not a structure or union
+  159 |     UART[uart_num]->conf0.stop_bit_num = stop_bit;
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:160:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  160 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_get_stop_bits':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:168:33: error: request for member 'conf0' in something not a structure or union
+  168 |     (*stop_bit) = UART[uart_num]->conf0.stop_bit_num;
+      |                                 ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_set_parity':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:177:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  177 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:178:19: error: request for member 'conf0' in something not a structure or union
+  178 |     UART[uart_num]->conf0.parity = (parity_mode & 0x1);
+      |                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:179:19: error: request for member 'conf0' in something not a structure or union
+  179 |     UART[uart_num]->conf0.parity_en = ((parity_mode >> 1) & 0x1);
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:180:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  180 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_get_parity':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:188:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  188 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:190:23: error: request for member 'conf0' in something not a structure or union
+  190 |     if (UART[uart_num]->conf0.parity_en)
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:192:27: error: request for member 'conf0' in something not a structure or union
+  192 |         if (UART[uart_num]->conf0.parity)
+      |                           ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:206:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  206 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_set_baudrate':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:212:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  212 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:213:19: error: request for member 'clk_div' in something not a structure or union
+  213 |     UART[uart_num]->clk_div.val = (uint32_t)(UART_CLK_FREQ / baud_rate) & 0xFFFFF;
+      |                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:213:46: error: 'UART_CLK_FREQ' undeclared (first use in this function); did you mean 'UART_CLK_EN'?
+  213 |     UART[uart_num]->clk_div.val = (uint32_t)(UART_CLK_FREQ / baud_rate) & 0xFFFFF;
+      |                                              ^~~~~~~~~~~~~
+      |                                              UART_CLK_EN
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:213:46: note: each undeclared identifier is reported only once for each function it appears in
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:214:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  214 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_get_baudrate':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:222:20: error: 'UART_CLK_FREQ' undeclared (first use in this function); did you mean 'UART_CLK_EN'?
+  222 |     (*baudrate) = (UART_CLK_FREQ / (UART[uart_num]->clk_div.val & 0xFFFFF));
+      |                    ^~~~~~~~~~~~~
+      |                    UART_CLK_EN
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:222:51: error: request for member 'clk_div' in something not a structure or union
+  222 |     (*baudrate) = (UART_CLK_FREQ / (UART[uart_num]->clk_div.val & 0xFFFFF));
+      |                                                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_set_line_inverse':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:230:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  230 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:231:19: error: request for member 'conf0' in something not a structure or union
+  231 |     UART[uart_num]->conf0.val &= ~UART_LINE_INV_MASK;
+      |                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:232:19: error: request for member 'conf0' in something not a structure or union
+  232 |     UART[uart_num]->conf0.val |= inverse_mask;
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:233:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  233 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_set_hw_flow_ctrl':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:242:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  242 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:246:23: error: request for member 'conf1' in something not a structure or union
+  246 |         UART[uart_num]->conf1.rx_flow_thrhd = rx_thresh;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:247:23: error: request for member 'conf1' in something not a structure or union
+  247 |         UART[uart_num]->conf1.rx_flow_en = 1;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:251:23: error: request for member 'conf1' in something not a structure or union
+  251 |         UART[uart_num]->conf1.rx_flow_en = 0;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:256:23: error: request for member 'conf0' in something not a structure or union
+  256 |         UART[uart_num]->conf0.tx_flow_en = 1;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:260:23: error: request for member 'conf0' in something not a structure or union
+  260 |         UART[uart_num]->conf0.tx_flow_en = 0;
+      |                       ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:263:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  263 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_get_hw_flow_ctrl':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:273:23: error: request for member 'conf1' in something not a structure or union
+  273 |     if (UART[uart_num]->conf1.rx_flow_en)
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:278:23: error: request for member 'conf0' in something not a structure or union
+  278 |     if (UART[uart_num]->conf0.tx_flow_en)
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_wait_tx_done':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:294:5: error: unknown type name 'portTickType'
+  294 |     portTickType ticks_end = xTaskGetTickCount() + ticks_to_wait;
+      |     ^~~~~~~~~~~~
+In file included from /home/alt/esp/v5.3.2/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:22,
+                 from /home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533:
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:297:57: error: 'portTickType' undeclared (first use in this function)
+  297 |     res = xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)ticks_to_wait);
+      |                                                         ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:297:70: error: expected ')' before 'ticks_to_wait'
+  297 |     res = xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)ticks_to_wait);
+      |                                                                      ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:90: note: to match this '('
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                          ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:297:11: note: in expansion of macro 'xSemaphoreTake'
+  297 |     res = xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)ticks_to_wait);
+      |           ^~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:318:31: error: request for member 'status' in something not a structure or union
+  318 |             if (UART[uart_num]->status.txfifo_cnt == 0)
+      |                               ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_enable_swap':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:340:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  340 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from /home/alt/esp/v5.3.2/esp-idf/components/hal/esp32c6/include/hal/gpio_ll.h:19,
+                 from /home/alt/git_bench/mul-tools/demo-link/components/DAP/include/gpio_common.h:44,
+                 from /home/alt/git_bench/mul-tools/demo-link/components/DAP/include/gpio_op.h:6,
+                 from /home/alt/git_bench/mul-tools/demo-link/components/DAP/include/DAP_config.h:53,
+                 from /home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:23:
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:342:44: error: 'FUNC_UART0_CTS' undeclared (first use in this function)
+  342 |     PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTCK_U, FUNC_UART0_CTS);
+      |                                            ^~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:39:45: note: in definition of macro 'REG_WRITE'
+   39 |             (*(volatile uint32_t *)(_r)) = (_v);                                                                       \
+      |                                             ^~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/io_mux_reg.h:90:45: note: in expansion of macro 'REG_SET_FIELD'
+   90 | #define PIN_FUNC_SELECT(PIN_NAME, FUNC)     REG_SET_FIELD(PIN_NAME, MCU_SEL, FUNC)
+      |                                             ^~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:342:5: note: in expansion of macro 'PIN_FUNC_SELECT'
+  342 |     PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTCK_U, FUNC_UART0_CTS);
+      |     ^~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:344:44: error: 'FUNC_UART0_RTS' undeclared (first use in this function)
+  344 |     PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTDO_U, FUNC_UART0_RTS);
+      |                                            ^~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:39:45: note: in definition of macro 'REG_WRITE'
+   39 |             (*(volatile uint32_t *)(_r)) = (_v);                                                                       \
+      |                                             ^~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/io_mux_reg.h:90:45: note: in expansion of macro 'REG_SET_FIELD'
+   90 | #define PIN_FUNC_SELECT(PIN_NAME, FUNC)     REG_SET_FIELD(PIN_NAME, MCU_SEL, FUNC)
+      |                                             ^~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:344:5: note: in expansion of macro 'PIN_FUNC_SELECT'
+  344 |     PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTDO_U, FUNC_UART0_RTS);
+      |     ^~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:346:23: error: 'UART_SWAP_REG' undeclared (first use in this function); did you mean 'UART_DATE_REG'?
+  346 |     SET_PERI_REG_MASK(UART_SWAP_REG, 0x4);
+      |                       ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:32:34: note: in definition of macro 'ETS_UNCACHED_ADDR'
+   32 | #define ETS_UNCACHED_ADDR(addr) (addr)
+      |                                  ^~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:112:13: note: in expansion of macro 'WRITE_PERI_REG'
+  112 |             WRITE_PERI_REG((reg), (READ_PERI_REG(reg)|(mask)));                                                        \
+      |             ^~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:346:5: note: in expansion of macro 'SET_PERI_REG_MASK'
+  346 |     SET_PERI_REG_MASK(UART_SWAP_REG, 0x4);
+      |     ^~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:347:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  347 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_disable_swap':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:357:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  357 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:359:25: error: 'UART_SWAP_REG' undeclared (first use in this function); did you mean 'UART_DATE_REG'?
+  359 |     CLEAR_PERI_REG_MASK(UART_SWAP_REG, 0x4);
+      |                         ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:32:34: note: in definition of macro 'ETS_UNCACHED_ADDR'
+   32 | #define ETS_UNCACHED_ADDR(addr) (addr)
+      |                                  ^~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:107:13: note: in expansion of macro 'WRITE_PERI_REG'
+  107 |             WRITE_PERI_REG((reg), (READ_PERI_REG(reg)&(~(mask))));                                                     \
+      |             ^~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:359:5: note: in expansion of macro 'CLEAR_PERI_REG_MASK'
+  359 |     CLEAR_PERI_REG_MASK(UART_SWAP_REG, 0x4);
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:360:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  360 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'uart_reset_rx_fifo':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:369:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  369 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:370:19: error: request for member 'conf0' in something not a structure or union
+  370 |     UART[uart_num]->conf0.rxfifo_rst = 0x1;
+      |                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:371:19: error: request for member 'conf0' in something not a structure or union
+  371 |     UART[uart_num]->conf0.rxfifo_rst = 0x0;
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:372:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  372 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_clear_intr_status':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:381:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  381 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:382:19: error: request for member 'int_clr' in something not a structure or union
+  382 |     UART[uart_num]->int_clr.val |= mask;
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:383:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  383 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_enable_intr_mask':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:392:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  392 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:393:19: error: request for member 'int_ena' in something not a structure or union
+  393 |     UART[uart_num]->int_ena.val |= enable_mask;
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:394:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  394 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_disable_intr_mask':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:402:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  402 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:403:19: error: request for member 'int_ena' in something not a structure or union
+  403 |     UART[uart_num]->int_ena.val &= ~disable_mask;
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:404:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  404 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_enable_tx_intr':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:431:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  431 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:432:19: error: request for member 'int_clr' in something not a structure or union
+  432 |     UART[uart_num]->int_clr.txfifo_empty = 1;
+      |                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:433:19: error: request for member 'conf1' in something not a structure or union
+  433 |     UART[uart_num]->conf1.txfifo_empty_thrhd = thresh & 0x7f;
+      |                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:434:19: error: request for member 'int_ena' in something not a structure or union
+  434 |     UART[uart_num]->int_ena.txfifo_empty = enable & 0x1;
+      |                   ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:435:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  435 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'uart_intr_service':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:447:47: error: request for member 'int_st' in something not a structure or union
+  447 |     uint32_t uart_intr_status = UART[uart_num]->int_st.val;
+      |                                               ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:449:23: error: the comparison will always evaluate as 'false' for the address of 'uart_isr_func' will never be NULL [-Werror=address]
+  449 |     if (uart_isr_func == NULL)
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:120:24: note: 'uart_isr_func' declared here
+  120 | static uart_isr_func_t uart_isr_func[UART_NUM_MAX];
+      |                        ^~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:456:42: error: request for member 'int_st' in something not a structure or union
+  456 |         uart_intr_status = UART[uart_num]->int_st.val;
+      |                                          ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_isr_register':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:472:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  472 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:473:5: error: implicit declaration of function '_xt_isr_mask'; did you mean 'ets_isr_mask'? [-Werror=implicit-function-declaration]
+  473 |     _xt_isr_mask(1 << ETS_UART_INUM);
+      |     ^~~~~~~~~~~~
+      |     ets_isr_mask
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:473:23: error: 'ETS_UART_INUM' undeclared (first use in this function); did you mean 'ETS_UART1_INUM'?
+  473 |     _xt_isr_mask(1 << ETS_UART_INUM);
+      |                       ^~~~~~~~~~~~~
+      |                       ETS_UART1_INUM
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:474:5: error: implicit declaration of function '_xt_isr_attach'; did you mean 'ets_isr_attach'? [-Werror=implicit-function-declaration]
+  474 |     _xt_isr_attach(ETS_UART_INUM, uart_intr_service, NULL);
+      |     ^~~~~~~~~~~~~~
+      |     ets_isr_attach
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:477:5: error: implicit declaration of function '_xt_isr_unmask'; did you mean 'ets_isr_unmask'? [-Werror=implicit-function-declaration]
+  477 |     _xt_isr_unmask(1 << ETS_UART_INUM);
+      |     ^~~~~~~~~~~~~~
+      |     ets_isr_unmask
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:478:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  478 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_param_config':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:488:49: error: 'FUNC_U1TXD_BK' undeclared (first use in this function); did you mean 'FUNC_U0TXD_U0TXD'?
+  488 |         PIN_FUNC_SELECT(PERIPHS_IO_MUX_GPIO2_U, FUNC_U1TXD_BK);
+      |                                                 ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:39:45: note: in definition of macro 'REG_WRITE'
+   39 |             (*(volatile uint32_t *)(_r)) = (_v);                                                                       \
+      |                                             ^~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/io_mux_reg.h:90:45: note: in expansion of macro 'REG_SET_FIELD'
+   90 | #define PIN_FUNC_SELECT(PIN_NAME, FUNC)     REG_SET_FIELD(PIN_NAME, MCU_SEL, FUNC)
+      |                                             ^~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:488:9: note: in expansion of macro 'PIN_FUNC_SELECT'
+  488 |         PIN_FUNC_SELECT(PERIPHS_IO_MUX_GPIO2_U, FUNC_U1TXD_BK);
+      |         ^~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:493:49: error: 'FUNC_U0RXD' undeclared (first use in this function)
+  493 |         PIN_FUNC_SELECT(PERIPHS_IO_MUX_U0RXD_U, FUNC_U0RXD);
+      |                                                 ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:39:45: note: in definition of macro 'REG_WRITE'
+   39 |             (*(volatile uint32_t *)(_r)) = (_v);                                                                       \
+      |                                             ^~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/io_mux_reg.h:90:45: note: in expansion of macro 'REG_SET_FIELD'
+   90 | #define PIN_FUNC_SELECT(PIN_NAME, FUNC)     REG_SET_FIELD(PIN_NAME, MCU_SEL, FUNC)
+      |                                             ^~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:493:9: note: in expansion of macro 'PIN_FUNC_SELECT'
+  493 |         PIN_FUNC_SELECT(PERIPHS_IO_MUX_U0RXD_U, FUNC_U0RXD);
+      |         ^~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:494:49: error: 'FUNC_U0TXD' undeclared (first use in this function)
+  494 |         PIN_FUNC_SELECT(PERIPHS_IO_MUX_U0TXD_U, FUNC_U0TXD);
+      |                                                 ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:39:45: note: in definition of macro 'REG_WRITE'
+   39 |             (*(volatile uint32_t *)(_r)) = (_v);                                                                       \
+      |                                             ^~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/io_mux_reg.h:90:45: note: in expansion of macro 'REG_SET_FIELD'
+   90 | #define PIN_FUNC_SELECT(PIN_NAME, FUNC)     REG_SET_FIELD(PIN_NAME, MCU_SEL, FUNC)
+      |                                             ^~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:494:9: note: in expansion of macro 'PIN_FUNC_SELECT'
+  494 |         PIN_FUNC_SELECT(PERIPHS_IO_MUX_U0TXD_U, FUNC_U0TXD);
+      |         ^~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:498:52: error: 'FUNC_U0RTS' undeclared (first use in this function)
+  498 |             PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTDO_U, FUNC_U0RTS);
+      |                                                    ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:39:45: note: in definition of macro 'REG_WRITE'
+   39 |             (*(volatile uint32_t *)(_r)) = (_v);                                                                       \
+      |                                             ^~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/io_mux_reg.h:90:45: note: in expansion of macro 'REG_SET_FIELD'
+   90 | #define PIN_FUNC_SELECT(PIN_NAME, FUNC)     REG_SET_FIELD(PIN_NAME, MCU_SEL, FUNC)
+      |                                             ^~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:498:13: note: in expansion of macro 'PIN_FUNC_SELECT'
+  498 |             PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTDO_U, FUNC_U0RTS);
+      |             ^~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:503:52: error: 'FUNC_UART0_CTS' undeclared (first use in this function)
+  503 |             PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTCK_U, FUNC_UART0_CTS);
+      |                                                    ^~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:39:45: note: in definition of macro 'REG_WRITE'
+   39 |             (*(volatile uint32_t *)(_r)) = (_v);                                                                       \
+      |                                             ^~
+/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/io_mux_reg.h:90:45: note: in expansion of macro 'REG_SET_FIELD'
+   90 | #define PIN_FUNC_SELECT(PIN_NAME, FUNC)     REG_SET_FIELD(PIN_NAME, MCU_SEL, FUNC)
+      |                                             ^~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:503:13: note: in expansion of macro 'PIN_FUNC_SELECT'
+  503 |             PIN_FUNC_SELECT(PERIPHS_IO_MUX_MTCK_U, FUNC_UART0_CTS);
+      |             ^~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_intr_config':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:523:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  523 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:524:19: error: request for member 'int_clr' in something not a structure or union
+  524 |     UART[uart_num]->int_clr.val = UART_INTR_MASK;
+      |                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:528:23: error: request for member 'conf1' in something not a structure or union
+  528 |         UART[uart_num]->conf1.rx_tout_thrhd = ((intr_conf->rx_timeout_thresh) & 0x7f);
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:529:23: error: request for member 'conf1' in something not a structure or union
+  529 |         UART[uart_num]->conf1.rx_tout_en = 1;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:533:23: error: request for member 'conf1' in something not a structure or union
+  533 |         UART[uart_num]->conf1.rx_tout_en = 0;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:538:23: error: request for member 'conf1' in something not a structure or union
+  538 |         UART[uart_num]->conf1.rxfifo_full_thrhd = intr_conf->rxfifo_full_thresh;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:543:23: error: request for member 'conf1' in something not a structure or union
+  543 |         UART[uart_num]->conf1.txfifo_empty_thrhd = intr_conf->txfifo_empty_intr_thresh;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:547:19: error: request for member 'int_ena' in something not a structure or union
+  547 |     UART[uart_num]->int_ena.val = intr_conf->intr_enable_mask;
+      |                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:548:27: error: 'ETS_UART_INUM' undeclared (first use in this function); did you mean 'ETS_UART1_INUM'?
+  548 |     _xt_isr_unmask(0x1 << ETS_UART_INUM);
+      |                           ^~~~~~~~~~~~~
+      |                           ETS_UART1_INUM
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:549:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  549 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'uart_rx_intr_handler_default':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:559:5: error: unknown type name 'uart_dev_t'; did you mean 'uart_isr_t'?
+  559 |     uart_dev_t *uart_reg = UART[uart_num];
+      |     ^~~~~~~~~~
+      |     uart_isr_t
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:560:31: error: request for member 'status' in something not a structure or union
+  560 |     int rx_fifo_len = uart_reg->status.rxfifo_cnt;
+      |                               ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:562:47: error: request for member 'int_st' in something not a structure or union
+  562 |     uint32_t uart_intr_status = UART[uart_num]->int_st.val;
+      |                                               ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:569:9: error: unknown type name 'uart_select_notif_t'
+  569 |         uart_select_notif_t notify = UART_SELECT_ERROR_NOTIF;
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:569:38: error: 'UART_SELECT_ERROR_NOTIF' undeclared (first use in this function)
+  569 |         uart_select_notif_t notify = UART_SELECT_ERROR_NOTIF;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:598:65: error: request for member 'status' in something not a structure or union
+  598 |                 int tx_fifo_rem = UART_FIFO_LEN - UART[uart_num]->status.txfifo_cnt;
+      |                                                                 ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:649:43: error: request for member 'fifo' in something not a structure or union
+  649 |                             UART[uart_num]->fifo.rw_byte = *(p_uart->tx_ptr++) & 0xff;
+      |                                           ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:695:35: error: request for member 'status' in something not a structure or union
+  695 |             rx_fifo_len = uart_reg->status.rxfifo_cnt;
+      |                                   ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:702:62: error: request for member 'fifo' in something not a structure or union
+  702 |                     p_uart->rx_data_buf[buf_idx++] = uart_reg->fifo.rw_byte;
+      |                                                              ^~
+In file included from /home/alt/esp/v5.3.2/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:25:
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:732:55: error: 'kSwoThreadEventGroup' undeclared (first use in this function)
+  732 |                             xEventGroupSetBitsFromISR(kSwoThreadEventGroup, UART_GOT_DATA, pdFALSE);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:545:77: note: in definition of macro 'xEventGroupSetBitsFromISR'
+  545 |     xTimerPendFunctionCallFromISR( vEventGroupSetBitsCallback, ( void * ) ( xEventGroup ), ( uint32_t ) ( uxBitsToSet ), ( pxHigherPriorityTaskWoken ) )
+      |                                                                             ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:739:26: error: 'UART_SELECT_READ_NOTIF' undeclared (first use in this function)
+  739 |                 notify = UART_SELECT_READ_NOTIF;
+      |                          ^~~~~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:756:21: error: request for member 'int_clr' in something not a structure or union
+  756 |             uart_reg->int_clr.rxfifo_ovf = 1;
+      |                     ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:769:21: error: request for member 'int_clr' in something not a structure or union
+  769 |             uart_reg->int_clr.frm_err = 1;
+      |                     ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:777:21: error: request for member 'int_clr' in something not a structure or union
+  777 |             uart_reg->int_clr.parity_err = 1;
+      |                     ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:785:21: error: request for member 'int_clr' in something not a structure or union
+  785 |             uart_reg->int_clr.val = uart_intr_status; // simply clear all other intr status
+      |                     ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:818:36: error: request for member 'int_st' in something not a structure or union
+  818 |         uart_intr_status = uart_reg->int_st.val;
+      |                                    ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'uart_fill_fifo':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:828:41: error: request for member 'status' in something not a structure or union
+  828 |     uint8_t tx_fifo_cnt = UART[uart_num]->status.txfifo_cnt;
+      |                                         ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:834:23: error: request for member 'fifo' in something not a structure or union
+  834 |         UART[uart_num]->fifo.rw_byte = buffer[i];
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_tx_chars':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:851:51: error: 'portTickType' undeclared (first use in this function)
+  851 |     xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)portMAX_DELAY);
+      |                                                   ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:24: error: expected expression before 'TickType_t'
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                        ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:851:64: note: in expansion of macro 'portMAX_DELAY'
+  851 |     xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)portMAX_DELAY);
+      |                                                                ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:37: error: expected ')' before numeric constant
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                                     ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:851:64: note: in expansion of macro 'portMAX_DELAY'
+  851 |     xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)portMAX_DELAY);
+      |                                                                ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:90: note: to match this '('
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                          ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:851:5: note: in expansion of macro 'xSemaphoreTake'
+  851 |     xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)portMAX_DELAY);
+      |     ^~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'uart_tx_all':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:867:51: error: 'portTickType' undeclared (first use in this function)
+  867 |     xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)portMAX_DELAY);
+      |                                                   ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:24: error: expected expression before 'TickType_t'
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                        ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:867:64: note: in expansion of macro 'portMAX_DELAY'
+  867 |     xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)portMAX_DELAY);
+      |                                                                ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:37: error: expected ')' before numeric constant
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                                     ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:867:64: note: in expansion of macro 'portMAX_DELAY'
+  867 |     xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)portMAX_DELAY);
+      |                                                                ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:90: note: to match this '('
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                          ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:867:5: note: in expansion of macro 'xSemaphoreTake'
+  867 |     xSemaphoreTake(p_uart_obj[uart_num]->tx_mux, (portTickType)portMAX_DELAY);
+      |     ^~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:24: error: expected expression before 'TickType_t'
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                        ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:892:91: note: in expansion of macro 'portMAX_DELAY'
+  892 |             if (pdTRUE == xSemaphoreTake(p_uart_obj[uart_num]->tx_fifo_sem, (portTickType)portMAX_DELAY))
+      |                                                                                           ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:37: error: expected ')' before numeric constant
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                                     ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:892:91: note: in expansion of macro 'portMAX_DELAY'
+  892 |             if (pdTRUE == xSemaphoreTake(p_uart_obj[uart_num]->tx_fifo_sem, (portTickType)portMAX_DELAY))
+      |                                                                                           ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:90: note: to match this '('
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                          ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:892:27: note: in expansion of macro 'xSemaphoreTake'
+  892 |             if (pdTRUE == xSemaphoreTake(p_uart_obj[uart_num]->tx_fifo_sem, (portTickType)portMAX_DELAY))
+      |                           ^~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_read_bytes':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:936:55: error: 'portTickType' undeclared (first use in this function)
+  936 |     if (xSemaphoreTake(p_uart_obj[uart_num]->rx_mux, (portTickType)ticks_to_wait) != pdTRUE)
+      |                                                       ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:936:68: error: expected ')' before 'ticks_to_wait'
+  936 |     if (xSemaphoreTake(p_uart_obj[uart_num]->rx_mux, (portTickType)ticks_to_wait) != pdTRUE)
+      |                                                                    ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:90: note: to match this '('
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                          ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:936:9: note: in expansion of macro 'xSemaphoreTake'
+  936 |     if (xSemaphoreTake(p_uart_obj[uart_num]->rx_mux, (portTickType)ticks_to_wait) != pdTRUE)
+      |         ^~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:945:106: error: expected ')' before 'ticks_to_wait'
+  945 |             data = (uint8_t *)xRingbufferReceive(p_uart_obj[uart_num]->rx_ring_buf, &size, (portTickType)ticks_to_wait);
+      |                                                 ~                                                        ^~~~~~~~~~~~~
+      |                                                                                                          )
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:971:9: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  971 |         UART_ENTER_CRITICAL();
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:974:9: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  974 |         UART_EXIT_CRITICAL();
+      |         ^~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:991:21: note: in expansion of macro 'UART_ENTER_CRITICAL'
+  991 |                     UART_ENTER_CRITICAL();
+      |                     ^~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:994:21: note: in expansion of macro 'UART_EXIT_CRITICAL'
+  994 |                     UART_EXIT_CRITICAL();
+      |                     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1002:55: error: 'kSwoThreadEventGroup' undeclared (first use in this function)
+ 1002 |                             xEventGroupSetBitsFromISR(kSwoThreadEventGroup, UART_GOT_DATA, pdFALSE);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:545:77: note: in definition of macro 'xEventGroupSetBitsFromISR'
+  545 |     xTimerPendFunctionCallFromISR( vEventGroupSetBitsCallback, ( void * ) ( xEventGroup ), ( uint32_t ) ( uxBitsToSet ), ( pxHigherPriorityTaskWoken ) )
+      |                                                                             ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_flush_input':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1035:37: error: 'portTickType' undeclared (first use in this function)
+ 1035 |     xSemaphoreTake(p_uart->rx_mux, (portTickType)portMAX_DELAY);
+      |                                     ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:24: error: expected expression before 'TickType_t'
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                        ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1035:50: note: in expansion of macro 'portMAX_DELAY'
+ 1035 |     xSemaphoreTake(p_uart->rx_mux, (portTickType)portMAX_DELAY);
+      |                                                  ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:37: error: expected ')' before numeric constant
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                                     ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1035:50: note: in expansion of macro 'portMAX_DELAY'
+ 1035 |     xSemaphoreTake(p_uart->rx_mux, (portTickType)portMAX_DELAY);
+      |                                                  ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:90: note: to match this '('
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                          ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1035:5: note: in expansion of macro 'xSemaphoreTake'
+ 1035 |     xSemaphoreTake(p_uart->rx_mux, (portTickType)portMAX_DELAY);
+      |     ^~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1043:13: note: in expansion of macro 'UART_ENTER_CRITICAL'
+ 1043 |             UART_ENTER_CRITICAL();
+      |             ^~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1045:13: note: in expansion of macro 'UART_EXIT_CRITICAL'
+ 1045 |             UART_EXIT_CRITICAL();
+      |             ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1051:88: error: expected ')' before numeric constant
+ 1051 |         data = (uint8_t *)xRingbufferReceive(p_uart->rx_ring_buf, &size, (portTickType)0);
+      |                                             ~                                          ^
+      |                                                                                        )
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1062:13: note: in expansion of macro 'UART_ENTER_CRITICAL'
+ 1062 |             UART_ENTER_CRITICAL();
+      |             ^~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1064:13: note: in expansion of macro 'UART_EXIT_CRITICAL'
+ 1064 |             UART_EXIT_CRITICAL();
+      |             ^~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1068:9: note: in expansion of macro 'UART_ENTER_CRITICAL'
+ 1068 |         UART_ENTER_CRITICAL();
+      |         ^~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1070:9: note: in expansion of macro 'UART_EXIT_CRITICAL'
+ 1070 |         UART_EXIT_CRITICAL();
+      |         ^~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1079:17: note: in expansion of macro 'UART_ENTER_CRITICAL'
+ 1079 |                 UART_ENTER_CRITICAL();
+      |                 ^~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1082:17: note: in expansion of macro 'UART_EXIT_CRITICAL'
+ 1082 |                 UART_EXIT_CRITICAL();
+      |                 ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1089:51: error: 'kSwoThreadEventGroup' undeclared (first use in this function)
+ 1089 |                         xEventGroupSetBitsFromISR(kSwoThreadEventGroup, UART_GOT_DATA, pdFALSE);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h:545:77: note: in definition of macro 'xEventGroupSetBitsFromISR'
+  545 |     xTimerPendFunctionCallFromISR( vEventGroupSetBitsCallback, ( void * ) ( xEventGroup ), ( uint32_t ) ( uxBitsToSet ), ( pxHigherPriorityTaskWoken ) )
+      |                                                                             ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_driver_install':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1175:58: warning: assignment to 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+ 1175 |         p_uart_obj[uart_num]->uart_select_notif_callback = NULL;
+      |                                                          ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_driver_delete':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1223:25: error: 'ETS_UART_INUM' undeclared (first use in this function); did you mean 'ETS_UART1_INUM'?
+ 1223 |     _xt_isr_mask(0x1 << ETS_UART_INUM);
+      |                         ^~~~~~~~~~~~~
+      |                         ETS_UART1_INUM
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: At top level:
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1279:62: error: unknown type name 'uart_select_notif_callback_t'
+ 1279 | void my_uart_set_select_notif_callback(uart_port_t uart_num, uart_select_notif_callback_t uart_select_notif_callback)
+      |                                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_set_rx_timeout':
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:530:59: error: expected expression before ';' token
+  530 | #define portENTER_CRITICAL(mux)                 {(void)mux;  vPortEnterCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:45:31: note: in expansion of macro 'portENTER_CRITICAL'
+   45 | #define UART_ENTER_CRITICAL() portENTER_CRITICAL()
+      |                               ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1292:5: note: in expansion of macro 'UART_ENTER_CRITICAL'
+ 1292 |     UART_ENTER_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1298:23: error: request for member 'conf1' in something not a structure or union
+ 1298 |         UART[uart_num]->conf1.rx_tout_thrhd = (tout_thresh & 0x7f);
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1299:23: error: request for member 'conf1' in something not a structure or union
+ 1299 |         UART[uart_num]->conf1.rx_tout_en = 1;
+      |                       ^~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1303:23: error: request for member 'conf1' in something not a structure or union
+ 1303 |         UART[uart_num]->conf1.rx_tout_en = 0;
+      |                       ^~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:531:59: error: expected expression before ';' token
+  531 | #define portEXIT_CRITICAL(mux)                  {(void)mux;  vPortExitCritical();}
+      |                                                           ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:46:30: note: in expansion of macro 'portEXIT_CRITICAL'
+   46 | #define UART_EXIT_CRITICAL() portEXIT_CRITICAL()
+      |                              ^~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1306:5: note: in expansion of macro 'UART_EXIT_CRITICAL'
+ 1306 |     UART_EXIT_CRITICAL();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c: In function 'my_uart_read_bytes_async_swo':
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1316:36: error: 'portTickType' undeclared (first use in this function)
+ 1316 |     xSemaphoreTake(kSWO_read_mux, (portTickType)portMAX_DELAY);
+      |                                    ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:24: error: expected expression before 'TickType_t'
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                        ^~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1316:49: note: in expansion of macro 'portMAX_DELAY'
+ 1316 |     xSemaphoreTake(kSWO_read_mux, (portTickType)portMAX_DELAY);
+      |                                                 ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:111:37: error: expected ')' before numeric constant
+  111 | #define portMAX_DELAY (TickType_t)  0xffffffffUL
+      |                                     ^~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:92: note: in definition of macro 'xSemaphoreTake'
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                            ^~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1316:49: note: in expansion of macro 'portMAX_DELAY'
+ 1316 |     xSemaphoreTake(kSWO_read_mux, (portTickType)portMAX_DELAY);
+      |                                                 ^~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:279:90: note: to match this '('
+  279 | #define xSemaphoreTake( xSemaphore, xBlockTime )    xQueueSemaphoreTake( ( xSemaphore ), ( xBlockTime ) )
+      |                                                                                          ^
+/home/alt/git_bench/mul-tools/demo-link/components/DAP/uart_modify.c:1316:5: note: in expansion of macro 'xSemaphoreTake'
+ 1316 |     xSemaphoreTake(kSWO_read_mux, (portTickType)portMAX_DELAY);
+      |     ^~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

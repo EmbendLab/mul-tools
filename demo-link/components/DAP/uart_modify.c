@@ -28,7 +28,8 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "freertos/semphr.h"
-#include "freertos/ringbuf.h"
+
+#include "../components/esp_ringbuf/include/freertos/ringbuf.h"
 #include "freertos/event_groups.h"
 
 #include "esp_attr.h"
@@ -37,7 +38,8 @@
 
 
 #include "rom/ets_sys.h"
-#include "driver/uart_select.h"
+//#include "driver/uart_select.h"
+//#include "../components/esp_driver_uart/include/driver/uart_select.h"
 
 #define portYIELD_FROM_ISR() taskYIELD()
 

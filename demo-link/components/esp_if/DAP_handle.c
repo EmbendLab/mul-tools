@@ -25,7 +25,7 @@
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
-#include "freertos/ringbuf.h"
+#include "../components/esp_ringbuf/include/freertos/ringbuf.h"
 #include "freertos/semphr.h"
 
 #include "lwip/err.h"
