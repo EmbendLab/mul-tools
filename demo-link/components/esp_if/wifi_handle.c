@@ -34,63 +34,38 @@ const int IPV4_GOTIP_BIT = BIT0;
 #ifdef CONFIG_EXAMPLE_IPV6
 const int IPV6_GOTIP_BIT = BIT1;
 #endif
-
+static const char *TAG = "wifi_event_handler";
 static void ssid_change();
-
-static esp_err_t event_handler(void *ctx, system_event_t *event) {
-    /* For accessing reason codes in case of disconnection */
-    system_event_info_t *info = &event->event_info;
-
-    switch (event->event_id) {
-    case SYSTEM_EVENT_STA_START:
-        esp_wifi_connect();
-        break;
-    case SYSTEM_EVENT_STA_CONNECTED:
-#ifdef CONFIG_EXAMPLE_IPV6
-        /* enable ipv6 */
-        tcpip_adapter_create_ip6_linklocal(TCPIP_ADAPTER_IF_STA);
-#endif
-        break;
-    case SYSTEM_EVENT_STA_GOT_IP:
-        GPIO_SET_LEVEL_HIGH(PIN_LED_WIFI_STATUS);
-
-        xEventGroupSetBits(wifi_event_group, IPV4_GOTIP_BIT);
-        os_printf("SYSTEM EVENT STA GOT IP : %s\r\n", ip4addr_ntoa(&event->event_info.got_ip.ip_info.ip));
-        break;
-    case SYSTEM_EVENT_STA_DISCONNECTED:
-        GPIO_SET_LEVEL_LOW(PIN_LED_WIFI_STATUS);
-
-        os_printf("Disconnect reason : %d\r\n", (int)info->disconnected.reason);
-
-#ifdef CONFIG_IDF_TARGET_ESP8266
-        if (info->disconnected.reason == WIFI_REASON_BASIC_RATE_NOT_SUPPORT) {
-            /*Switch to 802.11 bgn mode */
-            esp_wifi_set_protocol(ESP_IF_WIFI_STA, WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G | WIFI_PROTOCOL_11N);
+static void event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data) {
+    if (event_base == WIFI_EVENT) {
+        switch (event_id) {
+            case WIFI_EVENT_STA_START:
+                esp_wifi_connect();
+                ESP_LOGI(TAG, "Wi-Fi STA started");
+                break;
+            case WIFI_EVENT_STA_CONNECTED:
+                ESP_LOGI(TAG, "Wi-Fi STA connected");
+                xEventGroupSetBits(wifi_event_group, IPV4_GOTIP_BIT);
+                break;
+            case WIFI_EVENT_STA_DISCONNECTED: {
+                wifi_event_sta_disconnected_t *disconnected = (wifi_event_sta_disconnected_t *)event_data;
+                ESP_LOGI(TAG, "Wi-Fi STA disconnected, reason: %d", disconnected->reason);
+                break;
+            }
+            default:
+                break;
         }
-#endif
-        ssid_change();
-        esp_wifi_connect();
-        xEventGroupClearBits(wifi_event_group, IPV4_GOTIP_BIT);
-#ifdef CONFIG_EXAMPLE_IPV6
-        xEventGroupClearBits(wifi_event_group, IPV6_GOTIP_BIT);
-#endif
-
-#if (USE_UART_BRIDGE == 1)
-        uart_bridge_close();
-#endif
-        break;
-    case SYSTEM_EVENT_AP_STA_GOT_IP6:
-#ifdef CONFIG_EXAMPLE_IPV6
-        xEventGroupSetBits(wifi_event_group, IPV6_GOTIP_BIT);
-        os_printf("SYSTEM_EVENT_STA_GOT_IP6\r\n");
-
-        char *ip6 = ip6addr_ntoa(&event->event_info.got_ip6.ip6_info.ip);
-        os_printf("IPv6: %s\r\n", ip6);
-#endif
-    default:
-        break;
+    } else if (event_base == IP_EVENT) {
+        switch (event_id) {
+            case IP_EVENT_STA_GOT_IP: {
+                ip_event_got_ip_t *event = (ip_event_got_ip_t *)event_data;
+                ESP_LOGI(TAG, "Got IP: " IPSTR, IP2STR(&event->ip_info.ip));
+                break;
+            }
+            default:
+                break;
+        }
     }
-    return ESP_OK;
 }
 
 static void ssid_change() {
@@ -124,38 +99,38 @@ static void wait_for_ip() {
 }
 
 void wifi_init(void) {
-    GPIO_FUNCTION_SET(PIN_LED_WIFI_STATUS);
-    GPIO_SET_DIRECTION_NORMAL_OUT(PIN_LED_WIFI_STATUS);
+//     GPIO_FUNCTION_SET(PIN_LED_WIFI_STATUS);
+//     GPIO_SET_DIRECTION_NORMAL_OUT(PIN_LED_WIFI_STATUS);
 
-    tcpip_adapter_init();
+//     tcpip_adapter_init();
 
-#if (USE_STATIC_IP == 1)
-    tcpip_adapter_dhcps_stop(TCPIP_ADAPTER_IF_STA);
+// #if (USE_STATIC_IP == 1)
+//     tcpip_adapter_dhcps_stop(TCPIP_ADAPTER_IF_STA);
 
-    tcpip_adapter_ip_info_t ip_info;
+//     tcpip_adapter_ip_info_t ip_info;
 
-#define MY_IP4_ADDR(...) IP4_ADDR(__VA_ARGS__)
-    MY_IP4_ADDR(&ip_info.ip, DAP_IP_ADDRESS);
-    MY_IP4_ADDR(&ip_info.gw, DAP_IP_GATEWAY);
-    MY_IP4_ADDR(&ip_info.netmask, DAP_IP_NETMASK);
-#undef MY_IP4_ADDR
+// #define MY_IP4_ADDR(...) IP4_ADDR(__VA_ARGS__)
+//     MY_IP4_ADDR(&ip_info.ip, DAP_IP_ADDRESS);
+//     MY_IP4_ADDR(&ip_info.gw, DAP_IP_GATEWAY);
+//     MY_IP4_ADDR(&ip_info.netmask, DAP_IP_NETMASK);
+// #undef MY_IP4_ADDR
 
-    tcpip_adapter_set_ip_info(TCPIP_ADAPTER_IF_STA, &ip_info);
-#endif // (USE_STATIC_IP == 1)
+//     tcpip_adapter_set_ip_info(TCPIP_ADAPTER_IF_STA, &ip_info);
+// #endif // (USE_STATIC_IP == 1)
 
-    wifi_event_group = xEventGroupCreate();
+//     wifi_event_group = xEventGroupCreate();
 
-    ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
-    wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
-    ESP_ERROR_CHECK(esp_wifi_init(&cfg));
-    ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
+//     ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
+//     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
+//     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
+//     ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
 
-    // os_printf("Setting WiFi configuration SSID %s...\r\n", wifi_config.sta.ssid);
-    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-    ESP_ERROR_CHECK(esp_wifi_set_ps(WIFI_PS_NONE));
-    ssid_change();
-    ESP_ERROR_CHECK(esp_wifi_start());
+//     // os_printf("Setting WiFi configuration SSID %s...\r\n", wifi_config.sta.ssid);
+//     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
+//     ESP_ERROR_CHECK(esp_wifi_set_ps(WIFI_PS_NONE));
+//     ssid_change();
+//     ESP_ERROR_CHECK(esp_wifi_start());
 
 
-    wait_for_ip();
+//     wait_for_ip();
 }

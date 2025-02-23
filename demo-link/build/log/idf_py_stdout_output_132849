@@ -1,0 +1,28 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/alt/git_bench/mul-tools/demo-link/build/bootloader/esp-idf/esptool_py && /home/alt/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/alt/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/alt/git_bench/mul-tools/demo-link/build/bootloader/bootloader.bin
+Bootloader binary size 0x56f0 bytes. 0x2910 bytes (32%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:89:13: warning: 'wait_for_ip' defined but not used [-Wunused-function]
+   89 | static void wait_for_ip() {
+      |             ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:71:13: warning: 'ssid_change' defined but not used [-Wunused-function]
+   71 | static void ssid_change() {
+      |             ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:39:13: warning: 'event_handler' defined but not used [-Wunused-function]
+   39 | static void event_handler(void *arg, esp_event_base_t event_base, int32_t event_id, void *event_data) {
+      |             ^~~~~~~~~~~~~
+[5/11] Linking C static library esp-idf/esp_if/libesp_if.a
+[6/11] Linking C static library esp-idf/main/libmain.a
+[7/11] Generating ld/sections.ld
+[8/11] Building C object CMakeFiles/demo-link.elf.dir/project_elf_src_esp32c6.c.obj
+[9/11] Linking CXX executable demo-link.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated /home/alt/git_bench/mul-tools/demo-link/build/demo-link.bin
+[11/11] cd /home/alt/git_bench/mul-tools/demo-link/build/esp-idf/esptool_py && /home/alt/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/alt/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/alt/git_bench/mul-tools/demo-link/build/partition_table/partition-table.bin /home/alt/git_bench/mul-tools/demo-link/build/demo-link.bin
+demo-link.bin binary size 0xcd740 bytes. Smallest app partition is 0x100000 bytes. 0x328c0 bytes (20%) free.

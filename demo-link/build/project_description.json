@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "demo-link",
-    "project_version":    "f19c11a7-dirty",
+    "project_version":    "fe444119-dirty",
     "project_path":       "/home/alt/git_bench/mul-tools/demo-link",
     "idf_path":           "/home/alt/esp/v5.3.2/esp-idf",
     "build_dir":          "/home/alt/git_bench/mul-tools/demo-link/build",

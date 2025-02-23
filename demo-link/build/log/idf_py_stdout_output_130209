@@ -1,0 +1,97 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/alt/git_bench/mul-tools/demo-link/build/bootloader/esp-idf/esptool_py && /home/alt/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/alt/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/alt/git_bench/mul-tools/demo-link/build/bootloader/bootloader.bin
+Bootloader binary size 0x56f0 bytes. 0x2910 bytes (32%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj
+FAILED: esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj 
+/home/alt/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.3.2-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/alt/esp/v5.3.2/esp-idf/components/esp_event/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_netif/include -I/home/alt/esp/v5.3.2/esp-idf/components/nvs_flash/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_partition/include -I/home/alt/git_bench/mul-tools/demo-link/build/config -I/home/alt/git_bench/mul-tools/demo-link/components/esp_if/include -I/home/alt/git_bench/mul-tools/demo-link/components/USBIP/include -I/home/alt/esp/v5.3.2/esp-idf/components/newlib/platform_include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/config/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos -I/home/alt/esp/v5.3.2/esp-idf/components/freertos/esp_additions/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/dma/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/ldo/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/. -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/private_include -I/home/alt/esp/v5.3.2/esp-idf/components/heap/include -I/home/alt/esp/v5.3.2/esp-idf/components/log/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/include -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/soc/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/platform_port/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/esp32c6/include -I/home/alt/esp/v5.3.2/esp-idf/components/hal/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/include/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_rom/esp32c6 -I/home/alt/esp/v5.3.2/esp-idf/components/esp_common/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/include -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/soc -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/riscv -I/home/alt/esp/v5.3.2/esp-idf/components/esp_system/port/include/private -I/home/alt/esp/v5.3.2/esp-idf/components/riscv/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/include/apps/sntp -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/lwip/src/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/freertos/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/alt/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/sys -march=rv32imac_zicsr_zifencei  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -nostartfiles -Og -fno-shrink-wrap -fmacro-prefix-map=/home/alt/git_bench/mul-tools/demo-link=. -fmacro-prefix-map=/home/alt/esp/v5.3.2/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj -MF esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj.d -o esp-idf/esp_if/CMakeFiles/__idf_esp_if.dir/wifi_handle.c.obj -c /home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c: In function 'event_handler':
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:43:18: error: request for member 'event_id' in something not a structure or union
+   43 |     switch (event->event_id) {
+      |                  ^~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:44:10: error: 'SYSTEM_EVENT_STA_START' undeclared (first use in this function); did you mean 'WIFI_EVENT_STA_START'?
+   44 |     case SYSTEM_EVENT_STA_START:
+      |          ^~~~~~~~~~~~~~~~~~~~~~
+      |          WIFI_EVENT_STA_START
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:44:10: note: each undeclared identifier is reported only once for each function it appears in
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:47:10: error: 'SYSTEM_EVENT_STA_CONNECTED' undeclared (first use in this function); did you mean 'WIFI_EVENT_STA_CONNECTED'?
+   47 |     case SYSTEM_EVENT_STA_CONNECTED:
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+      |          WIFI_EVENT_STA_CONNECTED
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:49:10: error: 'SYSTEM_EVENT_STA_GOT_IP' undeclared (first use in this function); did you mean 'IP_EVENT_STA_GOT_IP'?
+   49 |     case SYSTEM_EVENT_STA_GOT_IP:
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+      |          IP_EVENT_STA_GOT_IP
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:53:55: error: implicit declaration of function 'ip4addr_ntoa'; did you mean 'esp_ip4addr_ntoa'? [-Werror=implicit-function-declaration]
+   53 |         os_printf("SYSTEM EVENT STA GOT IP : %s\r\n", ip4addr_ntoa(&event->event_info.got_ip.ip_info.ip));
+      |                                                       ^~~~~~~~~~~~
+      |                                                       esp_ip4addr_ntoa
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:53:74: error: request for member 'event_info' in something not a structure or union
+   53 |         os_printf("SYSTEM EVENT STA GOT IP : %s\r\n", ip4addr_ntoa(&event->event_info.got_ip.ip_info.ip));
+      |                                                                          ^~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:55:10: error: 'SYSTEM_EVENT_STA_DISCONNECTED' undeclared (first use in this function); did you mean 'WIFI_EVENT_STA_DISCONNECTED'?
+   55 |     case SYSTEM_EVENT_STA_DISCONNECTED:
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |          WIFI_EVENT_STA_DISCONNECTED
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:58:54: error: 'info' undeclared (first use in this function)
+   58 |         os_printf("Disconnect reason : %d\r\n", (int)info->disconnected.reason);
+      |                                                      ^~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:77:10: error: 'SYSTEM_EVENT_AP_STA_GOT_IP6' undeclared (first use in this function)
+   77 |     case SYSTEM_EVENT_AP_STA_GOT_IP6:
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c: In function 'wifi_init':
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:119:5: error: implicit declaration of function 'tcpip_adapter_init' [-Werror=implicit-function-declaration]
+  119 |     tcpip_adapter_init();
+      |     ^~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:122:5: error: implicit declaration of function 'tcpip_adapter_dhcps_stop' [-Werror=implicit-function-declaration]
+  122 |     tcpip_adapter_dhcps_stop(TCPIP_ADAPTER_IF_STA);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:122:30: error: 'TCPIP_ADAPTER_IF_STA' undeclared (first use in this function)
+  122 |     tcpip_adapter_dhcps_stop(TCPIP_ADAPTER_IF_STA);
+      |                              ^~~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:124:5: error: unknown type name 'tcpip_adapter_ip_info_t'
+  124 |     tcpip_adapter_ip_info_t ip_info;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:126:26: error: implicit declaration of function 'IP4_ADDR'; did you mean 'MY_IP4_ADDR'? [-Werror=implicit-function-declaration]
+  126 | #define MY_IP4_ADDR(...) IP4_ADDR(__VA_ARGS__)
+      |                          ^~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:127:5: note: in expansion of macro 'MY_IP4_ADDR'
+  127 |     MY_IP4_ADDR(&ip_info.ip, DAP_IP_ADDRESS);
+      |     ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:127:25: error: request for member 'ip' in something not a structure or union
+  127 |     MY_IP4_ADDR(&ip_info.ip, DAP_IP_ADDRESS);
+      |                         ^
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:126:35: note: in definition of macro 'MY_IP4_ADDR'
+  126 | #define MY_IP4_ADDR(...) IP4_ADDR(__VA_ARGS__)
+      |                                   ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:128:25: error: request for member 'gw' in something not a structure or union
+  128 |     MY_IP4_ADDR(&ip_info.gw, DAP_IP_GATEWAY);
+      |                         ^
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:126:35: note: in definition of macro 'MY_IP4_ADDR'
+  126 | #define MY_IP4_ADDR(...) IP4_ADDR(__VA_ARGS__)
+      |                                   ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:129:25: error: request for member 'netmask' in something not a structure or union
+  129 |     MY_IP4_ADDR(&ip_info.netmask, DAP_IP_NETMASK);
+      |                         ^
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:126:35: note: in definition of macro 'MY_IP4_ADDR'
+  126 | #define MY_IP4_ADDR(...) IP4_ADDR(__VA_ARGS__)
+      |                                   ^~~~~~~~~~~
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:132:5: error: implicit declaration of function 'tcpip_adapter_set_ip_info' [-Werror=implicit-function-declaration]
+  132 |     tcpip_adapter_set_ip_info(TCPIP_ADAPTER_IF_STA, &ip_info);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h:12,
+                 from /home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/esp_cpu.h:20,
+                 from /home/alt/esp/v5.3.2/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from /home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:65,
+                 from /home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/alt/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:12:
+/home/alt/git_bench/mul-tools/demo-link/components/esp_if/wifi_handle.c:137:21: error: implicit declaration of function 'esp_event_loop_init'; did you mean 'esp_event_loop_run'? [-Werror=implicit-function-declaration]
+  137 |     ESP_ERROR_CHECK(esp_event_loop_init(event_handler, NULL));
+      |                     ^~~~~~~~~~~~~~~~~~~
+/home/alt/esp/v5.3.2/esp-idf/components/esp_common/include/esp_err.h:116:30: note: in definition of macro 'ESP_ERROR_CHECK'
+  116 |         esp_err_t err_rc_ = (x);                                        \
+      |                              ^
+cc1: some warnings being treated as errors
+ninja: build stopped: subcommand failed.
