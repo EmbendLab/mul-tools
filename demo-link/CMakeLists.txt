@@ -2,6 +2,29 @@
 # CMakeLists in this exact order for cmake to work correctly
 cmake_minimum_required(VERSION 3.16)
 
+include_directories($ENV{IDF_PATH}/components/esp_event/include)
+set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/components/esp_event)
+
+include_directories($ENV{IDF_PATH}/components/esp_netif/include)
+set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/components/esp_netif)
+
+include_directories($ENV{IDF_PATH}/components/nvs_flash/include)
+set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/components/nvs_flash)
+
+include_directories($ENV{IDF_PATH}/components/esp_partition/include)
+set(EXTRA_COMPONENT_DIRS $ENV{IDF_PATH}/components/esp_partition)
+
+
+
+
+
+
+
+
+
+
+
+
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(demo-link)

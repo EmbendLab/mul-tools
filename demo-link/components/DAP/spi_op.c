@@ -24,10 +24,11 @@
 #include "spi_op.h"
 #include "spi_switch.h"
 #include "gpio_common.h"
+#include "../../components/components/soc/esp32c6/include/soc/spi_struct.h"
 
-spi_dev_t GPSPI2;
-#define DAP_SPI GPSPI2
-
+//spi_dev_t GPSPI2;
+//#define DAP_SPI GPSPI2
+spi_dev_t DAP_SPI;
 
 #define SET_MOSI_BIT_LEN(x) DAP_SPI.ms_dlen.ms_data_bitlen = x
 #define SET_MISO_BIT_LEN(x) DAP_SPI.ms_dlen.ms_data_bitlen = x
@@ -72,18 +73,18 @@ void DAP_SPI_WriteBits(const uint8_t count, const uint8_t *buf)
     switch (count)
     {
     case 8:
-        DAP_SPI.data_buf[0] = (buf[0] << 0) | (0U << 8) | (0U << 16) | (0U << 24);
+        DAP_SPI.data_buf[0].val = (buf[0] << 0) | (0U << 8) | (0U << 16) | (0U << 24);
         break;
     case 16:
-        DAP_SPI.data_buf[0] = (buf[0] << 0) | (buf[1] << 8) | (0x000U << 16) | (0x000U << 24);
+        DAP_SPI.data_buf[0].val = (buf[0] << 0) | (buf[1] << 8) | (0x000U << 16) | (0x000U << 24);
         break;
     case 33: // 32bits data & 1 bit parity
-        DAP_SPI.data_buf[0] = (buf[0] << 0) | (buf[1] << 8) | (buf[2] << 16) | (buf[3] << 24);
-        DAP_SPI.data_buf[1] = (buf[4] << 0) | (0x000U << 8) | (0x000U << 16) | (0x000U << 24);
+        DAP_SPI.data_buf[0].val = (buf[0] << 0) | (buf[1] << 8) | (buf[2] << 16) | (buf[3] << 24);
+        DAP_SPI.data_buf[1].val = (buf[4] << 0) | (0x000U << 8) | (0x000U << 16) | (0x000U << 24);
         break;
     case 51: // for line reset
-        DAP_SPI.data_buf[0] = (buf[0] << 0) | (buf[1] << 8) | (buf[2] << 16) | (buf[3] << 24);
-        DAP_SPI.data_buf[1] = (buf[4] << 0) | (buf[5] << 8) | (buf[2] << 16) | (0x000U << 24);
+        DAP_SPI.data_buf[0].val = (buf[0] << 0) | (buf[1] << 8) | (buf[2] << 16) | (buf[3] << 24);
+        DAP_SPI.data_buf[1].val = (buf[4] << 0) | (buf[5] << 8) | (buf[2] << 16) | (0x000U << 24);
         break;
     default:
     {
@@ -98,8 +99,8 @@ void DAP_SPI_WriteBits(const uint8_t count, const uint8_t *buf)
         // last byte use mask:
         pData[i-1] = pData[i-1] & ((2U >> (count % 8)) - 1U);
 
-        DAP_SPI.data_buf[0] = data_buf[0];
-        DAP_SPI.data_buf[1] = data_buf[1];
+        DAP_SPI.data_buf[0].val = data_buf[0];
+        DAP_SPI.data_buf[1].val = data_buf[1];
     }
     }
 
@@ -135,8 +136,8 @@ void DAP_SPI_ReadBits(const uint8_t count, uint8_t *buf) {
     DAP_SPI.user.sio = false;
 #endif
 
-    data_buf[0] = DAP_SPI.data_buf[0];
-    data_buf[1] = DAP_SPI.data_buf[1];
+    data_buf[0] = DAP_SPI.data_buf[0].val;
+    data_buf[1] = DAP_SPI.data_buf[1].val;
 
     for (i = 0; i < div_round_up(count, 8); i++)
     {
@@ -177,7 +178,7 @@ __FORCEINLINE void DAP_SPI_Send_Header(const uint8_t packetHeaderData, uint8_t *
 
     DAP_SPI.user.usr_command = 0;
 
-    dataBuf = DAP_SPI.data_buf[0];
+    dataBuf = DAP_SPI.data_buf[0].val;
     *ack = dataBuf & 0b111;
 }
 
@@ -210,8 +211,8 @@ __FORCEINLINE void DAP_SPI_Read_Data(uint32_t *resData, uint8_t *resParity)
     DAP_SPI.user.sio = false;
 #endif
 
-    pU32Data[0] = DAP_SPI.data_buf[0];
-    pU32Data[1] = DAP_SPI.data_buf[1];
+    pU32Data[0] = DAP_SPI.data_buf[0].val;
+    pU32Data[1] = DAP_SPI.data_buf[1].val;
 
     *resData = (dataBuf >> 0U) & 0xFFFFFFFFU;  // 32bits Response Data
     *resParity = (dataBuf >> (0U + 32U)) & 1U; // 1bit parity
@@ -227,8 +228,8 @@ __FORCEINLINE void DAP_SPI_Write_Data(uint32_t data, uint8_t parity)
     // esp32c3 can not send 33 bits of data correctly, we need to send an additional bit
     // that will not be recognized as the start bit.
     SET_MOSI_BIT_LEN(32U + 1U + 1U - 1U);
-    DAP_SPI.data_buf[0] = data;
-    DAP_SPI.data_buf[1] = parity == 0 ? 0b00 : 0b01;
+    DAP_SPI.data_buf[0].val = data;
+    DAP_SPI.data_buf[1].val = parity == 0 ? 0b00 : 0b01;
 
     START_AND_WAIT_SPI_TRANSMISSION_DONE();
 }
@@ -267,8 +268,8 @@ __FORCEINLINE void DAP_SPI_Protocol_Error_Read()
     DAP_SPI.user.usr_miso = 0;
     SET_MOSI_BIT_LEN(32U + 1U - 1); // 32bit ignore data + 1 bit - 1(prescribed)
 
-    DAP_SPI.data_buf[0] = 0xFFFFFFFFU;
-    DAP_SPI.data_buf[1] = 0xFFFFFFFFU;
+    DAP_SPI.data_buf[0].val = 0xFFFFFFFFU;
+    DAP_SPI.data_buf[1].val = 0xFFFFFFFFU;
 
     START_AND_WAIT_SPI_TRANSMISSION_DONE();
 }
@@ -284,8 +285,8 @@ __FORCEINLINE void DAP_SPI_Protocol_Error_Write()
     DAP_SPI.user.usr_miso = 0;
     SET_MOSI_BIT_LEN(1U + 32U + 1U - 1); // 1bit Trn + 32bit ignore data + 1 bit - 1(prescribed)
 
-    DAP_SPI.data_buf[0] = 0xFFFFFFFFU;
-    DAP_SPI.data_buf[1] = 0xFFFFFFFFU;
+    DAP_SPI.data_buf[0].val = 0xFFFFFFFFU;
+    DAP_SPI.data_buf[1].val = 0xFFFFFFFFU;
 
     START_AND_WAIT_SPI_TRANSMISSION_DONE();
 }
