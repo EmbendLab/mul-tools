@@ -10,4 +10,5 @@ idf_component_register(SRCS "DAP.c"
 # "uart_modify.c"
                     INCLUDE_DIRS "include"
                                  "../esp_if/include"
+                                 "../../components/components/soc/esp32c6/include"
                     )
